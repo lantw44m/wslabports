@@ -1,6 +1,6 @@
 # New ports collection makefile for:	local/w3m-config
 # Date created:				Apr 20 2006
-# Whom:					Rong-En Fan <rafan@infor.org>
+# Whom:					Rong-En Fan <rafan@csie.ntu.edu.tw>
 #
 # $FreeBSD$
 #
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	local
 DISTFILES=
 
-MAINTAINER=	rafan@infor.org
+MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	www/w3m configuration files
 
 RUN_DEPENDS=	w3m:${PORTSDIR}/www/w3m-m17n

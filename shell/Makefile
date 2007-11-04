@@ -1,6 +1,6 @@
 # New ports collection makefile for:	local/shell
 # Date created:				Nov 08 2006
-# Whom:					Rong-En Fan <rafan@infor.org>
+# Whom:					Rong-En Fan <rafan@csie.ntu.edu.tw>
 #
 # $FreeBSD$
 #
@@ -11,7 +11,7 @@ CATEGORIES=	local
 MASTER_SITES=	#
 DISTFILES=	#
 
-MAINTAINER=	rafan@infor.org
+MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	Create links for shell
 
 RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash \

@@ -1,13 +1,13 @@
 # New ports collection makefile for:	local/rxvt-devel
 # Date created:				Apr 22 2006
-# Whom:					Rong-En Fan <rafan@infor.org>
+# Whom:					Rong-En Fan <rafan@csie.ntu.edu.tw>
 #
 # $FreeBSD$
 #
 
 CATEGORIES=	local
 
-MAINTAINER=	rafan@infor.org
+MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	x11/rxvt-devel with 217 patches
 
 CONFLICTS=	rxvt-devel-[0-9]*

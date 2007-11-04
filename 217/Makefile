@@ -1,6 +1,6 @@
 # New ports collection makefile for:	local/217
 # Date created:				Nov 10 2006
-# Whom:					Rong-En Fan <rafan@infor.org>
+# Whom:					Rong-En Fan <rafan@csie.ntu.edu.tw>
 #
 # $FreeBSD$
 #
@@ -12,7 +12,7 @@ CATEGORIES=	local
 MASTER_SITES=	#
 DISTFILES=	#
 
-MAINTAINER=	rafan@infor.org
+MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	Meta-port for all Packages in 217
 
 LIB_DEPENDS=

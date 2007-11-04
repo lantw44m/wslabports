@@ -1,6 +1,6 @@
 # New ports collection makefile for:	local/matlab
 # Date created:				Apr 26 2006
-# Whom:					Rong-En Fan <rafan@infor.org>
+# Whom:					Rong-En Fan <rafan@csie.ntu.edu.tw>
 #
 # $FreeBSD$
 #
@@ -12,7 +12,7 @@ PORTREVISION=	0
 CATEGORIES=	local
 DISTFILES=
 
-MAINTAINER=	rafan@infor.org
+MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	easier to run MATLAB on FreeBSD
 
 USE_LINUX=	yes

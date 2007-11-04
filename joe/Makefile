@@ -1,13 +1,13 @@
 # New ports collection makefile for:	local/joe
 # Date created:				Apr 20 2006
-# Whom:					Rong-En Fan <rafan@infor.org>
+# Whom:					Rong-En Fan <rafan@csie.ntu.edu.tw>
 #
 # $FreeBSD$
 #
 
 CATEGORIES=	local
 
-MAINTAINER=	rafan@infor.org
+MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	editors/joe with 217 patches
 
 CONFLICTS=	joe-[0-9]*

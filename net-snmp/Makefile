@@ -1,13 +1,13 @@
 # New ports collection makefile for:	local/net-snmp
 # Date created:				Sep 18 2007
-# Whom:					Rong-En Fan <rafan@infor.org>
+# Whom:					Rong-En Fan <rafan@csie.ntu.edu.tw>
 #
 # $FreeBSD$
 #
 
 CATEGORIES=	local
 
-MAINTAINER=	rafan@infor.org
+MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	net-mgmt/net-snmp local patches
 
 CONFLICTS=	net-snmp-[0-9]*
