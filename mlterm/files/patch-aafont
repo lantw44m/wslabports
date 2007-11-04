@@ -1,0 +1,10 @@
+default font
+
+--- etc/aafont	Wed Oct  1 14:09:45 2003
++++ etc/aafont	Thu Dec 22 01:27:41 2005
+@@ -33,3 +33,5 @@
+ 
+ # Simplified Chinese speakers may want to enable the following setting.
+ #ISO10646_UCS4_1_BIWIDTH=AR PL SungtiL GB-iso10646-1;
++ISO8859_1=Bitstream Vera Sans Mono-;
++BIG5=AR PL New Sung-;

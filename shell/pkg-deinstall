@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# $FreeBSD$
+#
+
+SH="/bin/bash /bin/ksh"
+SHELLS="${PKG_DESTDIR-}/etc/shells"
+
+case $2 in
+DEINSTALL)
+  for sh in $SH; do
+    if grep -qs "^$sh\$" "$SHELLS"; then
+      if [ `id -u` -eq 0 ]; then
+        TMPSHELLS=`mktemp -t shells`
+        grep -v "^$sh\$" "$SHELLS" > "$TMPSHELLS"
+        cat "$TMPSHELLS" > "$SHELLS"
+        rm "$TMPSHELLS"
+	rm -f "$sh"
+      else
+        echo "Not root, please remove $sh from $SHELLS manually"
+      fi
+    fi
+  done
+  ;;
+esac

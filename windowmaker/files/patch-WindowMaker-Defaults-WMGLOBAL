@@ -1,0 +1,16 @@
+o use fireflyttf as default
+o enlarge font a bit
+
+--- WindowMaker/Defaults/WMGLOBAL.orig	Mon Apr 24 08:39:16 2006
++++ WindowMaker/Defaults/WMGLOBAL	Mon Apr 24 08:40:28 2006
+@@ -1,7 +1,7 @@
+ {
+-  SystemFont = "Trebuchet MS,Luxi Sans";
+-  BoldSystemFont = "Trebuchet MS,Luxi Sans:bold";
+-  DefaultFontSize = 11;
++  SystemFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=14";
++  BoldSystemFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=14";
++  DefaultFontSize = 14;
+   AntialiasedText = Yes;
+   FloppyPath = "/floppy";
+   DoubleClickTime = 250;

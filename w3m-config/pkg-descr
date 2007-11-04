@@ -1,0 +1,6 @@
+Changes:
+
+ - w3m's system-wide config for Big5 enviroment
+
+Note this port is NOT a slave port of www/w3m*. It merely install
+a system-wide config.

@@ -1,0 +1,10 @@
+default color settings, size
+
+--- etc/main	Sat Mar  8 20:19:27 2003
++++ etc/main	Thu Dec 22 01:27:41 2005
+@@ -1 +1,5 @@
+ scrollbar_view_name = sample
++bg_color=black
++fg_color=white
++geometry=80x24
++use_anti_alias=true

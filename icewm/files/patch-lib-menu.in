@@ -1,0 +1,19 @@
+Make the menu simpler and more useful.
+
+--- lib/menu.in.orig	Mon Apr 24 05:56:42 2006
++++ lib/menu.in	Mon Apr 24 05:57:33 2006
+@@ -4,12 +4,8 @@
+ # since modifications to this file will be discarded when you
+ # (re)install icewm.
+ #
+-prog xterm xterm xterm
+-prog rxvt xterm rxvt -bg black -cr green -fg white -C -fn 9x15 -sl 500
+-prog fte fte fte
+-prog NEdit nedit nedit
+-prog Mozilla mozilla mozilla
+-prog XChat xchat xchat
++prog rxvt xterm rxvt 
++prog Firefox mozilla firefox
+ prog Gimp gimp gimp
+ separator
+ menuprog Gnome folder icewm-menu-gnome1 --list @CONFIG_GNOME1_MENU_DIR@

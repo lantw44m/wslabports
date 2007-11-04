@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# $FreeBSD$
+#
+
+SH="/bin/bash /bin/ksh"
+SHELLS="${PKG_DESTDIR-}/etc/shells"
+
+case $2 in
+POST-INSTALL)
+  for sh in $SH; do
+    if [ -d "${SHELLS%/*}" ] && ! grep -qs "^$sh\$" "$SHELLS"; then
+      if [ `id -u` -eq 0 ]; then
+        echo "$sh" >> "$SHELLS"
+        /bin/ln -fs ${PKG_PREFIX}${sh} "${sh}"
+      else
+        echo "Not root, please add "$sh" to $SHELLS manually"
+      fi
+    fi
+  done
+
+  # XXX
+  /bin/ln -fs ${PKG_PREFIX}/bin/ksh93 /bin/ksh
+  ;;
+esac

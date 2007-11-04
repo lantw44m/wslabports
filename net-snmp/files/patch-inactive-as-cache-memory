@@ -1,0 +1,12 @@
+net-snmp, mark inactive pages under Cache
+--- agent/mibgroup/ucd-snmp/memory_freebsd2.c.orig	Wed Aug 17 20:36:14 2005
++++ agent/mibgroup/ucd-snmp/memory_freebsd2.c	Tue Sep 18 20:52:49 2007
+@@ -352,7 +352,7 @@
+ #ifdef darwin
+         long_ret = ptok(mem.v_lookups);
+ #else
+-        long_ret = ptok(mem.v_cache_count);
++        long_ret = ptok(mem.v_cache_count) + ptok(mem.v_inactive_count);
+ #endif
+         return ((u_char *) (&long_ret));
+ #endif

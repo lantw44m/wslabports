@@ -1,0 +1,11 @@
+o add rxvt to menu
+--- WindowMaker/plmenu.orig	Mon Apr 24 09:30:14 2006
++++ WindowMaker/plmenu	Mon Apr 24 09:29:59 2006
+@@ -8,6 +8,7 @@
+   ("Manual Browser", EXEC, "xman")
+  ),
+  ("Run...", SHEXEC, "%a(Run,Type command to run:)"),
++ ("Rxvt", EXEC, "rxvt"),
+  ("XTerm", EXEC, "xterm -sb"),
+  ("Mozilla Firefox", EXEC, "firefox"),
+  ("Workspaces", WORKSPACE_MENU),

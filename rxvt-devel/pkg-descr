@@ -1,0 +1,6 @@
+Changes:
+
+  - disable overstrike for bold text
+  - default print to null
+  - --enable-xgetdefault
+

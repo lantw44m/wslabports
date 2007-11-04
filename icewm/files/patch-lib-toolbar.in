@@ -1,0 +1,13 @@
+Make the toolbar simpler and more useful.
+
+--- lib/toolbar.in.orig	Mon Apr 24 05:57:48 2006
++++ lib/toolbar.in	Mon Apr 24 05:58:12 2006
+@@ -4,6 +4,5 @@
+ # since modifications to this file will be discarded when you
+ # (re)install icewm.
+ #
+-prog XTerm xterm xterm
+-prog FTE fte fte
+-prog Netscape netscape netscape
++prog rxvt xterm rxvt
++prog Firefox mozilla firefox

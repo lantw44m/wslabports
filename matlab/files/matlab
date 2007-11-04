@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# use linux_base's sh to fake uname
+
+echo ""
+echo "!!! WARNING !!!"
+echo ""
+echo "Running MATLAB on FreeBSD is considered as experimental."
+echo "This is not officially supported by the MathWorks, Inc."
+echo ""
+echo "!!! WARNING !!!"
+echo ""
+
+sleep 1
+
+exec /compat/linux/bin/sh /compat/linux/usr/local/matlab/bin/matlab "$@"

@@ -1,0 +1,13 @@
+o add rxvt and firefox to menu (zh_TW)
+--- WindowMaker/plmenu.zh_TW.orig	Mon Apr 24 09:16:03 2006
++++ WindowMaker/plmenu.zh_TW	Mon Apr 24 09:16:25 2006
+@@ -8,7 +8,8 @@
+   ("手冊瀏覽器", EXEC, "xman")
+   ),
+  ("執行...", SHEXEC,"%a(執行，輸入執行的命令：)"),
+- ("終端機", EXEC, "crxvt -ls -T 終端機 -n 終端機"),
++ ("終端機", EXEC, "rxvt"),
++ ("瀏覽器", EXEC, "firefox"),
+  ("工作區", WORKSPACE_MENU),
+  ("應用程式",
+   ("影像處理",

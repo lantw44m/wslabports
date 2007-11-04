@@ -1,0 +1,16 @@
+Make Big5/UTF-8 user happy when editing.
+
+Big5: -asis, moreve 1
+UTF-8: remove # (included in 3.5)
+
+--- rc/joerc.dist	Tue Dec  6 19:05:10 2005
++++ rc/joerc.in	Thu Dec  8 13:45:21 2005
+@@ -55,7 +55,7 @@
+ 
+  -marking	Text between ^KB and cursor is highlighted (use with -lightoff)
+ 
+- -asis		Characters 128 - 255 shown as-is
++-asis		Characters 128 - 255 shown as-is
+ 
+  -force		Force final newline when files are saved
+ 

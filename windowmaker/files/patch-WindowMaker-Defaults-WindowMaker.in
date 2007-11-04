@@ -1,0 +1,42 @@
+o firefly ttf as default
+o alt+f4 -> close window
+o raise window when alt-tab
+
+--- WindowMaker/Defaults/WindowMaker.in.orig	Mon Apr 24 09:14:53 2006
++++ WindowMaker/Defaults/WindowMaker.in	Mon Apr 24 09:15:34 2006
+@@ -69,7 +69,7 @@
+   AlignSubmenus = NO;
+   NoWindowOverIcons = NO;
+   IgnoreFocusClick = NO;
+-  CloseKey = None;
++  CloseKey = "Mod1+F4";
+   MaximizeKey = None;
+   VMaximizeKey = None;
+   RaiseLowerKey = None;
+@@ -104,13 +104,13 @@
+   ConstrainWindowSize = NO;
+   ClipRaiseLowerKey = None;
+   TitleJustify = center;
+-  WindowTitleFont = "Trebuchet MS,Luxi Sans:bold:pixelsize=12";
+-  MenuTitleFont = "Trebuchet MS,Luxi Sans:bold:pixelsize=12";
+-  MenuTextFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
+-  IconTitleFont = "Arial,Luxi Sans:pixelsize=9";
+-  ClipTitleFont = "Verdana:bold:pixelsize=10";
+-  DisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=12";
+-  LargeDisplayFont = "Trebuchet MS,Luxi Sans:pixelsize=24";
++  WindowTitleFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=14";
++  MenuTitleFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=14";
++  MenuTextFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=14";
++  IconTitleFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=12";
++  ClipTitleFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=12";
++  DisplayFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=14";
++  LargeDisplayFont = "\346\226\207\351\274\216\357\274\260\357\274\254\346\226\260\345\256\213:slant=0:weight=80:width=100:pixelsize=24";
+   HighlightColor = white;
+   HighlightTextColor = black;
+   ClipTitleColor = black;
+@@ -130,4 +130,5 @@
+   MenuTitleBack = (solid, black);
+   MenuTextBack = (solid, "rgb:aa/aa/aa");
+   IconBack = (dgradient, "rgb:a6/a6/b6", "rgb:51/55/61");
++  CirculateRaise = YES;
+ }
