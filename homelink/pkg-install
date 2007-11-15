@@ -1,0 +1,49 @@
+#!/bin/sh
+#
+# $Id$
+#
+
+LN="/bin/ln -fsv"
+
+NFS_BASE="/mnt"
+HOME_BASE="/home"
+
+HOME_UNDER="${HOME_BASE}/student"
+HOME_MASTER="${HOME_BASE}/master"
+HOME_PHD="${HOME_BASE}/phd"
+
+case $2 in
+POST-INSTALL)
+    # create links
+    for i in bebi course dept faculty inm; do
+      ${LN} ${NFS_BASE}/$i ${HOME_BASE}/
+    done
+    
+    # figure out dirs for student/master/phd links
+    mkdir -p ${HOME_UNDER}
+    for i in ${NFS_BASE}/b[0-9]/[0-9]*; do
+      ${LN} $i ${HOME_UNDER}/
+    done
+    for i in ${NFS_BASE}/a[0-9]/[0-9]*; do
+      ${LN} $i ${HOME_UNDER}/
+    done
+    
+    mkdir -p ${HOME_MASTER}
+    for i in ${NFS_BASE}/m[0-9]/[0-9]*; do
+      ${LN} $i ${HOME_MASTER}/
+    done
+    for i in ${NFS_BASE}/ag[0-9]/[0-9]*; do
+      ${LN} $i ${HOME_MASTER}/
+    done
+    
+    mkdir -p ${HOME_PHD}/
+    for i in ${NFS_BASE}/p[0-9]/[0-9]*; do
+      ${LN} $i ${HOME_PHD}/
+    done
+    # historical
+    for i in ${NFS_BASE}/p1/other/*; do
+      ${LN} $i ${HOME_PHD}/
+    done
+  ;;
+esac
+
