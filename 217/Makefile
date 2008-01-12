@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2007.10.30
+PORTVERSION!=	2008.01.12
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -47,12 +47,10 @@ RUN_DEPENDS+=	LPRng>=0:${PORTSDIR}/sysutils/LPRng \
 		portlint:${PORTSDIR}/ports-mgmt/portlint \
 		porttools>=0:${PORTSDIR}/ports-mgmt/porttools \
 		zh-screen>=0:${PORTSDIR}/chinese/screen \
-		big5width>=0:${PORTSDIR}/chinese/big5width
+		zh-big5width>=0:${PORTSDIR}/chinese/big5width
 
 RUN_DEPENDS+=	compat4x-i386>=0:${PORTSDIR}/misc/compat4x \
 		compat5x-${ARCH}>=0:${PORTSDIR}/misc/compat5x
-
-RUN_DEPENDS+=	zh-big5width>=0:${PORTSDIR}/chinese/big5width
 
 .if (${OSVERSION} >= 700000 && ${OSVERSION} <= 700014) || ${OSVERSION} < 601101
 RUN_DEPENDS+=	csup:${PORTSDIR}/net/csup
@@ -117,10 +115,10 @@ RUN_DEPENDS+=	gpg:${PORTSDIR}/security/gnupg \
 		keychain:${PORTSDIR}/security/keychain
 
 # Math, Science Computing
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}-numeric>=0:${PORTSDIR}/math/py-numeric \
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}numeric>=0:${PORTSDIR}/math/py-numeric \
 		octave:${PORTSDIR}/math/octave \
 		gsl>=0:${PORTSDIR}/math/gsl \
-		${PYTHON_PKGNAMEPREFIX}-gsl>=0:${PORTSDIR}/math/py-gsl \
+		${PYTHON_PKGNAMEPREFIX}gsl>=0:${PORTSDIR}/math/py-gsl \
 		fftw>=0:${PORTSDIR}/math/fftw \
 		fftw3>=0:${PORTSDIR}/math/fftw3 \
 		atlas>=0:${PORTSDIR}/math/R \
@@ -149,7 +147,7 @@ RUN_DEPENDS+=	p5-IO-All>=0:${PORTSDIR}/devel/p5-IO-All \
 
 # Python libraries
 .if ${ARCH} == "i386"
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}-psyco:${PORTSDIR}/devel/py-psyco
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}psyco>=0:${PORTSDIR}/devel/py-psyco
 .endif
 
 # database
@@ -157,7 +155,7 @@ USE_MYSQL=	yes
 RUN_DEPENDS+=	p5-DBD-mysql>=0:${PORTSDIR}/databases/p5-DBD-mysql \
 		p5-DBI>=0:${PORTSDIR}/databases/p5-DBI \
 		p5-BerkeleyDB>=0:${PORTSDIR}/databases/p5-BerkeleyDB \
-		${PYTHON_PKGNAMEPREFIX}-MySQLdb:${PORTSDIR}/databases/py-MySQLdb
+		${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:${PORTSDIR}/databases/py-MySQLdb
 
 # Converters
 RUN_DEPENDS+=	recode:${PORTSDIR}/converters/recode \
@@ -208,12 +206,8 @@ RUN_DEPENDS+=	firefox:${PORTSDIR}/www/firefox \
 		w3m-m17n>=0:${PORTSDIR}/www/w3m-m17n \
 		local-w3m-config>=0:${PORTSDIR}/local/w3m-config \
 		lynx>=0:${PORTSDIR}/www/lynx \
-		linux-flashplugin>=0:${PORTSDIR}/www/linux-flashplugin7
-
-# Plugins
-.if ${ARCH} == "i386"
-RUN_DEPENDS+=	linuxpluginwrapper>=0:${PORTSDIR}/www/linuxpluginwrapper
-.endif
+		linux-flashplugin>=9:${PORTSDIR}/www/linux-flashplugin9 \
+		swfdec-plugin>=0:${PORTSDIR}/www/swfdec-plugin
 
 # Editor
 USE_EMACS=	yes
@@ -222,9 +216,9 @@ RUN_DEPENDS+=	zh-openoffice.org-TW>=0:${PORTSDIR}/editors/openoffice.org-2 \
 		zh-xemacs-mule>=0:${PORTSDIR}/chinese/xemacs21 \
 		xemacs-packages>=0:${PORTSDIR}/editors/xemacs-packages \
 		emacs-w3m-${EMACS_PORT_NAME}>=0:${PORTSDIR}/www/emacs-w3m \
-		auctex>=0:${PORTSDIR}/print/auctex \
+		auctex-${EMACS_PORT_NAME}>=0:${PORTSDIR}/print/auctex \
 		python-mode.el>=0:${PORTSDIR}/lang/python-mode.el \
-		psvn>=0:${PORTSDIR}/devel/psvn \
+		psvn-${EMACS_PORT_NAME}>=0:${PORTSDIR}/devel/psvn \
 		vim:${PORTSDIR}/editors/vim \
 		local-joe>=0:${PORTSDIR}/local/joe
 
@@ -266,7 +260,7 @@ RUN_DEPENDS+=	bmeps>=0:${PORTSDIR}/graphics/bmeps \
 		opencv>=0:${PORTSDIR}/graphics/opencv \
 		gnuplot>=0:${PORTSDIR}/math/gnuplot \
 		ImageMagick>=0:${PORTSDIR}/graphics/ImageMagick \
-		${PYTHON_PKGNAMEPREFIX}-imaging>=0:${PORTSDIR}/graphics/py-imaging
+		${PYTHON_PKGNAMEPREFIX}imaging>=0:${PORTSDIR}/graphics/py-imaging
 .if ${ARCH} == "i386"
 RUN_DEPENDS+=	svgalib>=0:${PORTSDIR}/graphics/svgalib
 .endif
