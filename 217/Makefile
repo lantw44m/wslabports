@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.01.12
+PORTVERSION=	2008.01.31
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -228,7 +228,8 @@ RUN_DEPENDS+=	teTeX>=0:${PORTSDIR}/print/teTeX \
 		latex2html>=0:${PORTSDIR}/textproc/latex2html \
 		hugelatex>=0:${PORTSDIR}/print/hugelatex \
 		Hyperlatex>=0:${PORTSDIR}/print/hyperlatex \
-		bibtool:${PORTSDIR}/textproc/bibtool
+		bibtool:${PORTSDIR}/textproc/bibtool \
+		latex-pgf>=0:${PORTSDIR}/print/latex-pgf
 
 # PostScript tools
 RUN_DEPENDS+=	zh-bg5ps>=0:${PORTSDIR}/chinese/bg5ps \
