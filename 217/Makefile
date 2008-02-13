@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.01.31
+PORTVERSION=	2008.02.13
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -47,7 +47,8 @@ RUN_DEPENDS+=	LPRng>=0:${PORTSDIR}/sysutils/LPRng \
 		portlint:${PORTSDIR}/ports-mgmt/portlint \
 		porttools>=0:${PORTSDIR}/ports-mgmt/porttools \
 		zh-screen>=0:${PORTSDIR}/chinese/screen \
-		zh-big5width>=0:${PORTSDIR}/chinese/big5width
+		zh-big5width>=0:${PORTSDIR}/chinese/big5width \
+		p5-Mail-Sender>=0:${PORTSDIR}/mail/p5-Mail-Sender
 
 RUN_DEPENDS+=	compat4x-i386>=0:${PORTSDIR}/misc/compat4x \
 		compat5x-${ARCH}>=0:${PORTSDIR}/misc/compat5x
