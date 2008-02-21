@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.02.13
+PORTVERSION=	2008.02.21
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -144,7 +144,8 @@ RUN_DEPENDS+=	p5-IO-All>=0:${PORTSDIR}/devel/p5-IO-All \
 		p5-Set-Window>=0:${PORTSDIR}/math/p5-Set-Window \
 		p5-Set-Infinite>=0:${PORTSDIR}/devel/p5-Set-Infinite \
 		p5-Array-IntSpan>=0:${PORTSDIR}/misc/p5-Array-IntSpan \
-		p5-XML-SAX-Expat>=0:${PORTSDIR}/textproc/p5-XML-SAX-Expat
+		p5-XML-SAX-Expat>=0:${PORTSDIR}/textproc/p5-XML-SAX-Expat \
+		p5-PAR>=0:${PORTSDIR}/devel/p5-PAR
 
 # Python libraries
 .if ${ARCH} == "i386"
