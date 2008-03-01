@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.02.21
+PORTVERSION=	2008.03.01
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -48,7 +48,8 @@ RUN_DEPENDS+=	LPRng>=0:${PORTSDIR}/sysutils/LPRng \
 		porttools>=0:${PORTSDIR}/ports-mgmt/porttools \
 		zh-screen>=0:${PORTSDIR}/chinese/screen \
 		zh-big5width>=0:${PORTSDIR}/chinese/big5width \
-		p5-Mail-Sender>=0:${PORTSDIR}/mail/p5-Mail-Sender
+		p5-Mail-Sender>=0:${PORTSDIR}/mail/p5-Mail-Sender \
+		bsdsar>=0:${PORTSDIR}/sysutils/bsdsar
 
 RUN_DEPENDS+=	compat4x-i386>=0:${PORTSDIR}/misc/compat4x \
 		compat5x-${ARCH}>=0:${PORTSDIR}/misc/compat5x
@@ -100,7 +101,8 @@ RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion-perl \
 		ctags>=0:${PORTSDIR}/devel/ctags \
 		cscope>=0:${PORTSDIR}/devel/cscope \
 		ccache>=0:${PORTSDIR}/devel/ccache \
-		distcc>=0:${PORTSDIR}/devel/distcc
+		distcc>=0:${PORTSDIR}/devel/distcc \
+		doxygen>=0:${PORTSDIR}/devel/doxygen
 
 # Archiver
 RUN_DEPENDS+=	rar:${PORTSDIR}/archivers/rar \
