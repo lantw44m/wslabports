@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.03.01
+PORTVERSION=	2008.03.18
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -216,7 +216,7 @@ RUN_DEPENDS+=	firefox:${PORTSDIR}/www/firefox \
 # Editor
 USE_EMACS=	yes
 EMACS_PORT_NAME?=	emacs22
-RUN_DEPENDS+=	zh-openoffice.org-TW>=0:${PORTSDIR}/editors/openoffice.org-2 \
+RUN_DEPENDS+=	openoffice.org-alllangs>=0:${PORTSDIR}/editors/openoffice.org-2 \
 		zh-xemacs-mule>=0:${PORTSDIR}/chinese/xemacs21 \
 		xemacs-packages>=0:${PORTSDIR}/editors/xemacs-packages \
 		emacs-w3m-${EMACS_PORT_NAME}>=0:${PORTSDIR}/www/emacs-w3m \
