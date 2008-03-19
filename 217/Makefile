@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.03.18
+PORTVERSION=	2008.03.19
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -102,7 +102,8 @@ RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion-perl \
 		cscope>=0:${PORTSDIR}/devel/cscope \
 		ccache>=0:${PORTSDIR}/devel/ccache \
 		distcc>=0:${PORTSDIR}/devel/distcc \
-		doxygen>=0:${PORTSDIR}/devel/doxygen
+		doxygen>=0:${PORTSDIR}/devel/doxygen \
+		cmake>=0:${PORTSDIR}/devel/cmake
 
 # Archiver
 RUN_DEPENDS+=	rar:${PORTSDIR}/archivers/rar \
