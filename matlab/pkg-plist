@@ -1,1 +1,5 @@
 bin/matlab
+@exec mkdir -p /compat/linux/usr/local
+@exec ln -fs /mnt/freebsd/matlab /compat/linux/usr/local/matlab
+@unexec rm -f /compat/linux/usr/local/matlab
+@dirrmtry /compat/linux/usr/local

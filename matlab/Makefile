@@ -8,7 +8,7 @@
 PORTNAME=	matlab
 # set PORTVERSION equal to what matlab says
 PORTVERSION=	7.5.0.338 # R2007b
-PORTREVISION=	0
+PORTREVISION=	1 
 CATEGORIES=	local
 DISTFILES=
 
@@ -26,5 +26,7 @@ pre-everything::
 
 do-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/matlab ${PREFIX}/bin
+	${MKDIR} -p /compat/linux/usr/local
+	${LN} -fs /mnt/freebsd/matlab /compat/linux/usr/local/matlab
 
 .include <bsd.port.mk>
