@@ -212,7 +212,8 @@ RUN_DEPENDS+=	firefox:${PORTSDIR}/www/firefox \
 		local-w3m-config>=0:${PORTSDIR}/local/w3m-config \
 		lynx>=0:${PORTSDIR}/www/lynx \
 		linux-flashplugin>=9:${PORTSDIR}/www/linux-flashplugin9 \
-		swfdec-plugin>=0:${PORTSDIR}/www/swfdec-plugin
+		swfdec-plugin>=0:${PORTSDIR}/www/swfdec-plugin \
+		nspluginwrapper>=0:${PORTSDIR}/www/nspluginwrapper
 
 # Editor
 USE_EMACS=	yes
