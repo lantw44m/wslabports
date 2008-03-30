@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.03.19
+PORTVERSION=	2008.03.30
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -36,7 +36,7 @@ RUN_DEPENDS+=	LPRng>=0:${PORTSDIR}/sysutils/LPRng \
 		sudo>=0:${PORTSDIR}/security/sudo \
 		sshit>=0:${PORTSDIR}/security/sshit \
 		portaudit>=0:${PORTSDIR}/ports-mgmt/portaudit \
-		local-net-snmp>=0:${PORTSDIR}/local/net-snmp \
+		net-snmp>=0:${PORTSDIR}/local/net-snmp \
 		nagios-plugins>=0:${PORTSDIR}/net-mgmt/nagios-plugins \
 		nsca-client>=0:${PORTSDIR}/net-mgmt/nsca-client \
 		mbmon:${PORTSDIR}/sysutils/mbmon \
