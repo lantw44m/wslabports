@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.03.30
+PORTVERSION=	2008.04.07
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -252,7 +252,8 @@ RUN_DEPENDS+=	acroread7>=0:${PORTSDIR}/print/acroread7 \
 		zh-xpdf>=0:${PORTSDIR}/chinese/xpdf \
 		gv>=0:${PORTSDIR}/print/gv \
 		wv>=0:${PORTSDIR}/textproc/wv \
-		djvulibre-nox11>=0:${PORTSDIR}/graphics/djvulibre-nox11
+		djvulibre-nox11>=0:${PORTSDIR}/graphics/djvulibre-nox11 \
+		xchm>=0:${PORTSDIR}/deskutils/xchm
 
 # Image Tools
 USE_SDL=	yes
