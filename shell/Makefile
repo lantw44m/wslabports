@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	shell
-PORTVERSION=	1.0.20061108
+PORTVERSION=	1.0.20080413
 CATEGORIES=	local
 MASTER_SITES=	#
 DISTFILES=	#
@@ -14,6 +14,7 @@ DISTFILES=	#
 MAINTAINER=	rafan@csie.ntu.edu.tw
 COMMENT=	Create links for shell
 
+BUILD_DEPENDS=	bison:${PORTSDIR}/devel/bison
 RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash \
 		bash-completion>=0:${PORTSDIR}/shells/bash-completion \
 		ksh93:${PORTSDIR}/shells/ksh93
