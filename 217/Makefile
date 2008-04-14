@@ -83,7 +83,7 @@ RUN_DEPENDS+=	gcc42:${PORTSDIR}/lang/gcc42 \
 # Java
 RUN_DEPENDS+=	diablo-jdk>=0:${PORTSDIR}/java/diablo-jdk15
 .if ${ARCH} == "i386"
-RUN_DEPENDS+=	java3d>=0:${PORTSDIR}/java/java3d
+#RUN_DEPENDS+=	java3d>=0:${PORTSDIR}/java/java3d
 .endif
 
 # Development
