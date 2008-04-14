@@ -90,7 +90,9 @@ RUN_DEPENDS+=	diablo-jdk>=0:${PORTSDIR}/java/diablo-jdk15
 # broken with Firefox 2.0
 #eclipse:${PORTSDIR}/java/eclipse
 .if ${ARCH} == "i386"
+.if ${OSVERSION} < 700000
 RUN_DEPENDS+=	valgrind:${PORTSDIR}/devel/valgrind
+.endif
 .endif
 RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion-perl \
 		svk:${PORTSDIR}/devel/svk \
