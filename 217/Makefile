@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.04.07
+PORTVERSION=	2008.05.17
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -81,7 +81,7 @@ RUN_DEPENDS+=	gcc42:${PORTSDIR}/lang/gcc42 \
 		tcl>=8.4:${PORTSDIR}/lang/tcl84
 
 # Java
-RUN_DEPENDS+=	diablo-jdk>=0:${PORTSDIR}/java/diablo-jdk15
+RUN_DEPENDS+=	jdk>=0:${PORTSDIR}/java/jdk16
 .if ${ARCH} == "i386"
 #RUN_DEPENDS+=	java3d>=0:${PORTSDIR}/java/java3d
 .endif
