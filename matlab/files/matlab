@@ -4,13 +4,6 @@
 
 ARCH=`uname -p`
 
-if [ "${ARCH}" = "amd64" -a -z "${FORCE}" ]; then
-	echo "MATLAB can not run on amd64. To try it, run"
-	echo ""
-	echo "env FORCE=1 $0 "
-	exit 1
-fi
-
 echo ""
 echo "!!! WARNING !!!"
 echo ""

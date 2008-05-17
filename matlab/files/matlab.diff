@@ -1,12 +1,39 @@
 --- bin/matlab.orig	Sat Nov  5 10:32:26 2005
 +++ bin/matlab	Sat Nov  5 10:32:53 2005
-@@ -397,7 +397,8 @@
+@@ -397,7 +397,7 @@
  #
  # Check for link portably
  #
 -	if [ `expr "$lscmd" : '.*->.*'` -ne 0 ]; then
-+#
 +	if test -L $newbase; then
  	    filename=`echo "$lscmd" | awk '{ print $NF }'`
  	else
  #
+diff -ur matlab/bin/util/arch.sh matlab-freebsd/bin/util/arch.sh
+--- bin/util/arch.sh	2008-05-16 22:13:20.510308026 +0800
++++ bin/util/arch.sh	2008-05-16 22:14:00.720928347 +0800
+@@ -141,7 +141,10 @@
+                             ;;
+                     esac
+                     ;;
+-            esac
++            FreeBSD)
++                    ARCH="glnx86"
++                    ;;
++            esac
+         fi
+ 	return 0
+     }
+diff -ur matlab/bin/util/oscheck.sh matlab-freebsd/bin/util/oscheck.sh
+--- bin/util/oscheck.sh	2008-05-16 22:13:20.510308026 +0800
++++ bin/util/oscheck.sh	2008-05-16 22:14:00.715995303 +0800
+@@ -130,7 +130,8 @@
+                 # Example: Be sure that the platform has flag sse2
+                 #          There are many ways to do this.
+                 #          Output the flag location.
+-                expr "`cat /proc/cpuinfo`" : '.* sse2 .*$'
++                #expr "`cat /proc/cpuinfo`" : '.* sse2 .*$'
++                echo 1
+                 return
+                 ;;
+             *)
