@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.05.17
+PORTVERSION=	2008.08.24
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -213,7 +213,6 @@ RUN_DEPENDS+=	firefox:${PORTSDIR}/www/firefox \
 		w3m-m17n>=0:${PORTSDIR}/www/w3m-m17n \
 		local-w3m-config>=0:${PORTSDIR}/local/w3m-config \
 		lynx>=0:${PORTSDIR}/www/lynx \
-		linux-flashplugin>=9:${PORTSDIR}/www/linux-flashplugin9 \
 		swfdec-plugin>=0:${PORTSDIR}/www/swfdec-plugin \
 		nspluginwrapper>=0:${PORTSDIR}/www/nspluginwrapper
 
