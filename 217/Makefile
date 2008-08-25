@@ -6,8 +6,8 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.08.24
-PORTREVISION=	1
+PORTVERSION=	2008.08.25
+PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
 DISTFILES=	#
@@ -81,7 +81,7 @@ RUN_DEPENDS+=	gcc42:${PORTSDIR}/lang/gcc42 \
 		tcl>=8.4:${PORTSDIR}/lang/tcl84
 
 # Java
-RUN_DEPENDS+=	diable-jdk>=0:${PORTSDIR}/java/diable-jdk16
+RUN_DEPENDS+=	diablo-jdk>=0:${PORTSDIR}/java/diablo-jdk16
 .if ${ARCH} == "i386"
 #RUN_DEPENDS+=	java3d>=0:${PORTSDIR}/java/java3d
 .endif
@@ -94,7 +94,7 @@ RUN_DEPENDS+=	diable-jdk>=0:${PORTSDIR}/java/diable-jdk16
 RUN_DEPENDS+=	valgrind:${PORTSDIR}/devel/valgrind
 .endif
 .endif
-RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion-perl \
+RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion \
 		svk:${PORTSDIR}/devel/svk \
 		p5-VCP-Dest-svk>=0:${PORTSDIR}/devel/p5-VCP-Dest-svk \
 		ddd:${PORTSDIR}/devel/ddd \
