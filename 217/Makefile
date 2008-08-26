@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.08.25
+PORTVERSION=	2008.08.26
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -52,11 +52,8 @@ RUN_DEPENDS+=	LPRng>=0:${PORTSDIR}/sysutils/LPRng \
 		bsdsar>=0:${PORTSDIR}/sysutils/bsdsar
 
 RUN_DEPENDS+=	compat4x-i386>=0:${PORTSDIR}/misc/compat4x \
-		compat5x-${ARCH}>=0:${PORTSDIR}/misc/compat5x
-
-.if (${OSVERSION} >= 700000 && ${OSVERSION} <= 700014) || ${OSVERSION} < 601101
-RUN_DEPENDS+=	csup:${PORTSDIR}/net/csup
-.endif
+		compat5x-${ARCH}>=0:${PORTSDIR}/misc/compat5x \
+		compat6x-${ARCH}>=0:${PORTSDIR}/misc/compat6x
 
 # Network
 RUN_DEPENDS+=	trafshow:${PORTSDIR}/net/trafshow \
@@ -87,13 +84,6 @@ RUN_DEPENDS+=	diablo-jdk>=0:${PORTSDIR}/java/diablo-jdk16
 .endif
 
 # Development
-# broken with Firefox 2.0
-#eclipse:${PORTSDIR}/java/eclipse
-.if ${ARCH} == "i386"
-.if ${OSVERSION} < 700000
-RUN_DEPENDS+=	valgrind:${PORTSDIR}/devel/valgrind
-.endif
-.endif
 RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion \
 		svk:${PORTSDIR}/devel/svk \
 		p5-VCP-Dest-svk>=0:${PORTSDIR}/devel/p5-VCP-Dest-svk \
