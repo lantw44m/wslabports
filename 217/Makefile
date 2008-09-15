@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.08.26
+PORTVERSION=	2008.09.15
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -238,7 +238,7 @@ RUN_DEPENDS+=	zh-bg5ps>=0:${PORTSDIR}/chinese/bg5ps \
 		psutils-a4>=0:${PORTSDIR}/print/psutils-a4
 
 # Viewer
-RUN_DEPENDS+=	acroread7>=0:${PORTSDIR}/print/acroread7 \
+RUN_DEPENDS+=	acroread8>=0:${PORTSDIR}/print/acroread8 \
 		xpdf>=0:${PORTSDIR}/graphics/xpdf \
 		zh-xpdf>=0:${PORTSDIR}/chinese/xpdf \
 		gv>=0:${PORTSDIR}/print/gv \
