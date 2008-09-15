@@ -7,7 +7,7 @@
 
 CATEGORIES=	local
 
-MAINTAINER=	rafan@csie.ntu.edu.tw
+MAINTAINER=	ta@csie.ntu.edu.tw
 COMMENT=	x11/mlterm with 217 patches
 
 CONFLICTS=	mlterm-[0-9]*

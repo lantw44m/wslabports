@@ -7,7 +7,7 @@
 
 CATEGORIES=	local
 
-MAINTAINER=	rafan@csie.ntu.edu.tw
+MAINTAINER=	ta@csie.ntu.edu.tw
 COMMENT=	editors/joe with 217 patches
 
 CONFLICTS=	joe-[0-9]*

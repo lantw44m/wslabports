@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	local
 DISTFILES=
 
-MAINTAINER=	rafan@csie.ntu.edu.tw
+MAINTAINER=	ta@csie.ntu.edu.tw
 COMMENT=	www/w3m configuration files
 
 RUN_DEPENDS=	w3m:${PORTSDIR}/www/w3m-m17n

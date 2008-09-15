@@ -7,7 +7,7 @@
 
 CATEGORIES=	local
 
-MAINTAINER=	rafan@csie.ntu.edu.tw
+MAINTAINER=	ta@csie.ntu.edu.tw
 COMMENT=	x11/wdm with 217 patches
 
 CONFLICTS=	wdm-[0-9]*

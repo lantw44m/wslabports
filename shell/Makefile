@@ -11,7 +11,7 @@ CATEGORIES=	local
 MASTER_SITES=	#
 DISTFILES=	#
 
-MAINTAINER=	rafan@csie.ntu.edu.tw
+MAINTAINER=	ta@csie.ntu.edu.tw
 COMMENT=	Create links for shell
 
 BUILD_DEPENDS=	bison:${PORTSDIR}/devel/bison

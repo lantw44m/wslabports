@@ -7,7 +7,7 @@
 
 CATEGORIES=	local
 
-MAINTAINER=	rafan@csie.ntu.edu.tw
+MAINTAINER=	ta@csie.ntu.edu.tw
 COMMENT=	x11/rxvt-devel with 217 patches
 
 CONFLICTS=	rxvt-devel-[0-9]*

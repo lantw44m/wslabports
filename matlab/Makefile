@@ -12,7 +12,7 @@ PORTREVISION=	0
 CATEGORIES=	local
 DISTFILES=
 
-MAINTAINER=	rafan@csie.ntu.edu.tw
+MAINTAINER=	ta@csie.ntu.edu.tw
 COMMENT=	easier to run MATLAB on FreeBSD
 
 USE_LINUX=	yes
