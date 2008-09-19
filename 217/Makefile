@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.09.15
+PORTVERSION=	2008.09.19
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -295,7 +295,8 @@ RUN_DEPENDS+=	vnc>=0:${PORTSDIR}/net/vnc
 .endif
 
 # Instant Messenger
-RUN_DEPENDS+=	pidgin:${PORTSDIR}/net-im/pidgin
+RUN_DEPENDS+=	pidgin:${PORTSDIR}/net-im/pidgin \
+		skype:${PORTSDIR}/net/skype
 
 # Multimedia
 RUN_DEPENDS+=	mplayer:${PORTSDIR}/multimedia/mplayer \
