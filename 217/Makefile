@@ -209,7 +209,8 @@ RUN_DEPENDS+=	firefox:${PORTSDIR}/www/firefox \
 # Editor
 USE_EMACS=	yes
 EMACS_PORT_NAME?=	emacs22
-RUN_DEPENDS+=	openoffice.org-alllangs>=0:${PORTSDIR}/editors/openoffice.org-2 \
+#RUN_DEPENDS+=	openoffice.org-alllangs>=0:${PORTSDIR}/editors/openoffice.org-2 \
+RUN_DEPENDS+=	\
 		zh-xemacs-mule>=0:${PORTSDIR}/chinese/xemacs21 \
 		xemacs-packages>=0:${PORTSDIR}/editors/xemacs-packages \
 		emacs-w3m-${EMACS_PORT_NAME}>=0:${PORTSDIR}/www/emacs-w3m \
@@ -217,7 +218,8 @@ RUN_DEPENDS+=	openoffice.org-alllangs>=0:${PORTSDIR}/editors/openoffice.org-2 \
 		python-mode.el>=0:${PORTSDIR}/lang/python-mode.el \
 		psvn-${EMACS_PORT_NAME}>=0:${PORTSDIR}/devel/psvn \
 		vim:${PORTSDIR}/editors/vim \
-		local-joe>=0:${PORTSDIR}/local/joe
+		local-joe>=0:${PORTSDIR}/local/joe \
+		nano:${PORTSDIR}/editors/nano
 
 # LaTeX
 RUN_DEPENDS+=	teTeX>=0:${PORTSDIR}/print/teTeX \
