@@ -95,7 +95,8 @@ RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion \
 		ccache>=0:${PORTSDIR}/devel/ccache \
 		distcc>=0:${PORTSDIR}/devel/distcc \
 		doxygen>=0:${PORTSDIR}/devel/doxygen \
-		cmake>=0:${PORTSDIR}/devel/cmake
+		cmake>=0:${PORTSDIR}/devel/cmake \
+		py-cjson:${PORTSDIR}/devel/py-cjson
 
 # Archiver
 RUN_DEPENDS+=	rar:${PORTSDIR}/archivers/rar \
