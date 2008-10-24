@@ -153,7 +153,8 @@ USE_MYSQL=	yes
 RUN_DEPENDS+=	p5-DBD-mysql>=0:${PORTSDIR}/databases/p5-DBD-mysql \
 		p5-DBI>=0:${PORTSDIR}/databases/p5-DBI \
 		p5-BerkeleyDB>=0:${PORTSDIR}/databases/p5-BerkeleyDB \
-		${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:${PORTSDIR}/databases/py-MySQLdb
+		${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:${PORTSDIR}/databases/py-MySQLdb \
+		${PYTHON_PKGNAMEPREFIX}pysqlite>=0:${PORTSDIR}/databases/py-pysqlite23
 
 # Converters
 RUN_DEPENDS+=	recode:${PORTSDIR}/converters/recode \
