@@ -144,9 +144,9 @@ RUN_DEPENDS+=	p5-IO-All>=0:${PORTSDIR}/devel/p5-IO-All \
 		p5-PAR>=0:${PORTSDIR}/devel/p5-PAR
 
 # Python libraries
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:${PORTSDIR}/www/py-beautifulsoup
 .if ${ARCH} == "i386"
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}psyco>=0:${PORTSDIR}/devel/py-psyco \
-		${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:${PORTSDIR}/www/py-beautifulsoup
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}psyco>=0:${PORTSDIR}/devel/py-psyco
 .endif
 
 # database
