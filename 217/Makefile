@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.09.19
+PORTVERSION=	2008.11.11
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -293,11 +293,7 @@ RUN_DEPENDS+=	zh-telnet>=0:${PORTSDIR}/chinese/telnet
 RUN_DEPENDS+=	zh-irssi>=0:${PORTSDIR}/chinese/irssi
 
 # VNC
-.if ${ARCH} == "i386"
 RUN_DEPENDS+=	tightvnc>=0:${PORTSDIR}/net/tightvnc
-.else
-RUN_DEPENDS+=	vnc>=0:${PORTSDIR}/net/vnc
-.endif
 
 # Instant Messenger
 RUN_DEPENDS+=	pidgin:${PORTSDIR}/net-im/pidgin \
