@@ -95,8 +95,7 @@ RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion \
 		ccache>=0:${PORTSDIR}/devel/ccache \
 		distcc>=0:${PORTSDIR}/devel/distcc \
 		doxygen>=0:${PORTSDIR}/devel/doxygen \
-		cmake>=0:${PORTSDIR}/devel/cmake \
-		py-cjson:${PORTSDIR}/devel/py-cjson
+		cmake>=0:${PORTSDIR}/devel/cmake
 
 # Archiver
 RUN_DEPENDS+=	rar:${PORTSDIR}/archivers/rar \
@@ -144,7 +143,9 @@ RUN_DEPENDS+=	p5-IO-All>=0:${PORTSDIR}/devel/p5-IO-All \
 		p5-PAR>=0:${PORTSDIR}/devel/p5-PAR
 
 # Python libraries
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:${PORTSDIR}/www/py-beautifulsoup
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:${PORTSDIR}/www/py-beautifulsoup \
+		${PYTHON_PKGNAMEPREFIX}cjson>=0:${PORTSDIR}/devel/py-cjson \
+		${PYTHON_PKGNAMEPREFIX}simplejson>=0:${PORTSDIR}/devel/py-simplejson
 .if ${ARCH} == "i386"
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}psyco>=0:${PORTSDIR}/devel/py-psyco
 .endif
