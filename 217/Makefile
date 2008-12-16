@@ -108,7 +108,8 @@ RUN_DEPENDS+=	ispell:${PORTSDIR}/textproc/ispell \
 
 # security related
 RUN_DEPENDS+=	gpg:${PORTSDIR}/security/gnupg \
-		keychain:${PORTSDIR}/security/keychain
+		keychain:${PORTSDIR}/security/keychain \
+		denyhosts:${PORTSDIR}/security/denyhosts
 
 # Math, Science Computing
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}numeric>=0:${PORTSDIR}/math/py-numeric \
