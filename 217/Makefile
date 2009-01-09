@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2008.11.11
+PORTVERSION=	2009.01.10
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -109,7 +109,7 @@ RUN_DEPENDS+=	ispell:${PORTSDIR}/textproc/ispell \
 # security related
 RUN_DEPENDS+=	gpg:${PORTSDIR}/security/gnupg \
 		keychain:${PORTSDIR}/security/keychain \
-		denyhosts:${PORTSDIR}/security/denyhosts
+		denyhosts>=0:${PORTSDIR}/security/denyhosts
 
 # Math, Science Computing
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}numeric>=0:${PORTSDIR}/math/py-numeric \
