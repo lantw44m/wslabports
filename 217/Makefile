@@ -73,7 +73,7 @@ RUN_DEPENDS+=	gcc42:${PORTSDIR}/lang/gcc42 \
 		f2c:${PORTSDIR}/lang/f2c \
 		ocaml:${PORTSDIR}/lang/ocaml \
 		perl:${PORTSDIR}/lang/perl5.8 \
-		python:${PORTSDIR}/lang/python \
+		python>=0:${PORTSDIR}/lang/python \
 		ruby:${PORTSDIR}/lang/ruby18 \
 		tcl>=8.4:${PORTSDIR}/lang/tcl84
 
