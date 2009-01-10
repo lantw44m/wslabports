@@ -247,7 +247,7 @@ RUN_DEPENDS+=	zh-bg5ps>=0:${PORTSDIR}/chinese/bg5ps \
 # Viewer
 RUN_DEPENDS+=	acroread8>=0:${PORTSDIR}/print/acroread8 \
 		xpdf>=0:${PORTSDIR}/graphics/xpdf \
-		zh-xpdf>=0:${PORTSDIR}/chinese/xpdf \
+		zh-xpdf-zhfont>=0:${PORTSDIR}/chinese/xpdf \
 		gv>=0:${PORTSDIR}/print/gv \
 		wv>=0:${PORTSDIR}/textproc/wv \
 		djvulibre-nox11>=0:${PORTSDIR}/graphics/djvulibre-nox11 \
