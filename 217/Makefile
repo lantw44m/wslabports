@@ -339,8 +339,8 @@ do-install:
 	@${DO_NADA}
 
 check:
-	@${PKG_INFO} -qoa | ${SORT} > ${PKG_CURRENT}
-	@${MAKE} all-depends-list | ${SED} 's,${PORTSDIR}/,,' | ${SORT} > ${PKG_LISTED}
+	@${PKG_INFO} -qoa | ${SORT} | uniq > ${PKG_CURRENT}
+	@${MAKE} all-depends-list | ${SED} 's,${PORTSDIR}/,,' | ${SORT} | uniq > ${PKG_LISTED}
 	@${ECHO_CMD} "Ports are installed but not listed"
 	@comm -23 ${PKG_CURRENT} ${PKG_LISTED}
 	@${ECHO_CMD} ""
