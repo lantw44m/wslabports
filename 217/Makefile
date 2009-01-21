@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2009.01.10
+PORTVERSION=	2009.01.21
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -278,7 +278,7 @@ RUN_DEPENDS+=	ftps:${PORTSDIR}/ftp/bsdftpd-ssl \
 
 # Mail Client
 RUN_DEPENDS+=	zh-mutt-devel>=0:${PORTSDIR}/chinese/mutt \
-		zh-pine>=0:${PORTSDIR}/chinese/pine4 \
+		alpine>=0:${PORTSDIR}/mail/alpine \
 		fetchmail:${PORTSDIR}/mail/fetchmail \
 		metamail>=0:${PORTSDIR}/mail/metamail \
 		urlview:${PORTSDIR}/textproc/urlview
