@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2009.01.22
+PORTVERSION=	2009.01.23
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -120,7 +120,7 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}numeric>=0:${PORTSDIR}/math/py-numeric \
 		fftw3>=0:${PORTSDIR}/math/fftw3 \
 		R>=0:${PORTSDIR}/math/R \
 		local-matlab>=0:${PORTSDIR}/local/matlab \
-		mpich>=0:${PORTSDIR}/net/mpich
+		mpich2>=0:${PORTSDIR}/net/mpich2
 
 # Biology
 RUN_DEPENDS+=	p5-bioperl>=0:${PORTSDIR}/biology/p5-bioperl \
