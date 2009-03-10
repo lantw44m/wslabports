@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2009.02.13
+PORTVERSION=	2009.03.10
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -28,8 +28,7 @@ USE_PYTHON=	yes
 .include <bsd.port.pre.mk>
 
 # System
-RUN_DEPENDS+=	LPRng>=0:${PORTSDIR}/sysutils/LPRng \
-		pkg_rmleaves>=0:${PORTSDIR}/ports-mgmt/pkg_rmleaves \
+RUN_DEPENDS+=	pkg_rmleaves>=0:${PORTSDIR}/ports-mgmt/pkg_rmleaves \
 		portconf>=0:${PORTSDIR}/ports-mgmt/portconf \
 		portupgrade:${PORTSDIR}/ports-mgmt/portupgrade \
 		smartmontools>=0:${PORTSDIR}/sysutils/smartmontools \
