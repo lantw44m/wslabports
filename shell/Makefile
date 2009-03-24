@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	shell
-PORTVERSION=	1.0.20080413
+PORTVERSION=	1.0.20090324
 CATEGORIES=	local
 MASTER_SITES=	#
 DISTFILES=	#
@@ -16,7 +16,6 @@ COMMENT=	Create links for shell
 
 BUILD_DEPENDS=	bison:${PORTSDIR}/devel/bison
 RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash \
-		bash-completion>=0:${PORTSDIR}/shells/bash-completion \
 		ksh93:${PORTSDIR}/shells/ksh93
 
 NO_BUILD=	yes
