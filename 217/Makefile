@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2009.03.10
+PORTVERSION=	2009.04.06
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -63,9 +63,6 @@ RUN_DEPENDS+=	trafshow:${PORTSDIR}/net/trafshow \
 RUN_DEPENDS+=	local-shell>=0:${PORTSDIR}/local/shell
 
 # Language / Compiler
-.if ${ARCH} == "i386"
-RUN_DEPENDS+=	mit-scheme>=0:${PORTSDIR}/lang/mit-scheme 
-.endif
 RUN_DEPENDS+=	gcc42:${PORTSDIR}/lang/gcc42 \
 		clisp:${PORTSDIR}/lang/clisp \
 		expect:${PORTSDIR}/lang/expect \
@@ -78,9 +75,6 @@ RUN_DEPENDS+=	gcc42:${PORTSDIR}/lang/gcc42 \
 
 # Java
 RUN_DEPENDS+=	diablo-jdk>=0:${PORTSDIR}/java/diablo-jdk16
-.if ${ARCH} == "i386"
-#RUN_DEPENDS+=	java3d>=0:${PORTSDIR}/java/java3d
-.endif
 
 # Development
 RUN_DEPENDS+=	svn:${PORTSDIR}/devel/subversion \
@@ -146,9 +140,6 @@ RUN_DEPENDS+=	p5-IO-All>=0:${PORTSDIR}/devel/p5-IO-All \
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:${PORTSDIR}/www/py-beautifulsoup \
 		${PYTHON_PKGNAMEPREFIX}cjson>=0:${PORTSDIR}/devel/py-cjson \
 		${PYTHON_PKGNAMEPREFIX}simplejson>=0:${PORTSDIR}/devel/py-simplejson
-.if ${ARCH} == "i386"
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}psyco>=0:${PORTSDIR}/devel/py-psyco
-.endif
 
 # database
 USE_MYSQL=	yes
@@ -268,9 +259,6 @@ RUN_DEPENDS+=	bmeps>=0:${PORTSDIR}/graphics/bmeps \
 		gnuplot>=0:${PORTSDIR}/math/gnuplot \
 		ImageMagick>=0:${PORTSDIR}/graphics/ImageMagick \
 		${PYTHON_PKGNAMEPREFIX}imaging>=0:${PORTSDIR}/graphics/py-imaging
-.if ${ARCH} == "i386"
-RUN_DEPENDS+=	svgalib>=0:${PORTSDIR}/graphics/svgalib
-.endif
 
 # FTP Client
 RUN_DEPENDS+=	ftps:${PORTSDIR}/ftp/bsdftpd-ssl \
