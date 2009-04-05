@@ -48,7 +48,9 @@ RUN_DEPENDS+=	pkg_rmleaves>=0:${PORTSDIR}/ports-mgmt/pkg_rmleaves \
 		zh-screen>=0:${PORTSDIR}/chinese/screen \
 		zh-big5width>=0:${PORTSDIR}/chinese/big5width \
 		p5-Mail-Sender>=0:${PORTSDIR}/mail/p5-Mail-Sender \
-		bsdsar>=0:${PORTSDIR}/sysutils/bsdsar
+		bsdsar>=0:${PORTSDIR}/sysutils/bsdsar \
+		cups-base>=0:${PORTSDIR}/print/cups-base \
+		cups-pstoraster>=0:${PORTSDIR}/print/cups-pstoraster
 
 RUN_DEPENDS+=	compat4x-i386>=0:${PORTSDIR}/misc/compat4x \
 		compat5x-${ARCH}>=0:${PORTSDIR}/misc/compat5x \
