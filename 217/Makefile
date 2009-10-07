@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	217
-PORTVERSION=	2009.04.06
+PORTVERSION=	2009.10.05
 PORTREVISION=	0
 CATEGORIES=	local
 MASTER_SITES=	#
@@ -28,10 +28,10 @@ USE_PYTHON=	yes
 .include <bsd.port.pre.mk>
 
 # System
+#		smartmontools>=0:${PORTSDIR}/sysutils/smartmontools 
 RUN_DEPENDS+=	pkg_rmleaves>=0:${PORTSDIR}/ports-mgmt/pkg_rmleaves \
 		portconf>=0:${PORTSDIR}/ports-mgmt/portconf \
 		portupgrade:${PORTSDIR}/ports-mgmt/portupgrade \
-		smartmontools>=0:${PORTSDIR}/sysutils/smartmontools \
 		sudo>=0:${PORTSDIR}/security/sudo \
 		sshit>=0:${PORTSDIR}/security/sshit \
 		portaudit>=0:${PORTSDIR}/ports-mgmt/portaudit \
@@ -54,7 +54,8 @@ RUN_DEPENDS+=	pkg_rmleaves>=0:${PORTSDIR}/ports-mgmt/pkg_rmleaves \
 
 RUN_DEPENDS+=	compat4x-i386>=0:${PORTSDIR}/misc/compat4x \
 		compat5x-${ARCH}>=0:${PORTSDIR}/misc/compat5x \
-		compat6x-${ARCH}>=0:${PORTSDIR}/misc/compat6x
+		compat6x-${ARCH}>=0:${PORTSDIR}/misc/compat6x \
+		compat7x-${ARCH}>=0:${PORTSDIR}/misc/compat7x
 
 # Network
 RUN_DEPENDS+=	trafshow:${PORTSDIR}/net/trafshow \
@@ -70,7 +71,7 @@ RUN_DEPENDS+=	gcc42:${PORTSDIR}/lang/gcc42 \
 		expect:${PORTSDIR}/lang/expect \
 		f2c:${PORTSDIR}/lang/f2c \
 		ocaml:${PORTSDIR}/lang/ocaml \
-		perl:${PORTSDIR}/lang/perl5.8 \
+		perl:${PORTSDIR}/lang/perl5.10 \
 		python>=0:${PORTSDIR}/lang/python \
 		ruby:${PORTSDIR}/lang/ruby18 \
 		tcl>=8.4:${PORTSDIR}/lang/tcl84
@@ -196,19 +197,19 @@ RUN_DEPENDS+=	rxvt:${PORTSDIR}/local/rxvt-devel \
 		mlterm:${PORTSDIR}/local/mlterm
 
 # Browser
-RUN_DEPENDS+=	firefox:${PORTSDIR}/www/firefox \
+RUN_DEPENDS+=	firefox>=3:${PORTSDIR}/www/firefox3 \
 		w3m-m17n>=0:${PORTSDIR}/www/w3m-m17n \
 		local-w3m-config>=0:${PORTSDIR}/local/w3m-config \
 		lynx>=0:${PORTSDIR}/www/lynx \
-		swfdec-plugin>=0:${PORTSDIR}/www/swfdec-plugin \
-		nspluginwrapper>=0:${PORTSDIR}/www/nspluginwrapper
+		swfdec-plugin>=0:${PORTSDIR}/www/swfdec-plugin
+#nspluginwrapper>=0:${PORTSDIR}/www/nspluginwrapper
 
 # Editor
 USE_EMACS=	yes
 EMACS_PORT_NAME?=	emacs22
-#RUN_DEPENDS+=	openoffice.org-alllangs>=0:${PORTSDIR}/editors/openoffice.org-2
+#RUN_DEPENDS+=	openoffice.org-alllangs>=0:${PORTSDIR}/editors/openoffice.org-3
 # for openoffice
-RUN_DEPENDS+=	boost>=0:${PORTSDIR}/devel/boost
+#RUN_DEPENDS+=	boost>=0:${PORTSDIR}/devel/boost
 RUN_DEPENDS+=	\
 		zh-xemacs-mule>=0:${PORTSDIR}/chinese/xemacs21 \
 		xemacs-packages>=0:${PORTSDIR}/editors/xemacs-packages \
@@ -239,8 +240,8 @@ RUN_DEPENDS+=	zh-bg5ps>=0:${PORTSDIR}/chinese/bg5ps \
 		psutils-a4>=0:${PORTSDIR}/print/psutils-a4
 
 # Viewer
-RUN_DEPENDS+=	acroread8>=0:${PORTSDIR}/print/acroread8 \
-		xpdf>=0:${PORTSDIR}/graphics/xpdf \
+RUN_DEPENDS+=	acroread9>=0:${PORTSDIR}/print/acroread9
+RUN_DEPENDS+=		xpdf>=0:${PORTSDIR}/graphics/xpdf \
 		zh-xpdf-zhfont>=0:${PORTSDIR}/chinese/xpdf \
 		gv>=0:${PORTSDIR}/print/gv \
 		wv>=0:${PORTSDIR}/textproc/wv \
